@@ -3,6 +3,7 @@ import { Admin, Resource } from 'react-admin';
 import Dashboard from './dashboard/dashboard';
 import { PostList, PostEdit, PostCreate } from "./posts/posts";
 import { UserList } from "./users/users";
+// import dataProvider  from "./services/dataProvider"
 import jsonServerProvider from 'ra-data-json-server';
 
 import PostIcon from '@material-ui/icons/Book';
