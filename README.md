@@ -1,12 +1,12 @@
 ## Docker React-Admin
 
-```bash
+```shell script
 npx create-react-app docker-react-admin
 ```
 
-Dockerfile
+**Dockerfile**
 
-```
+```dockerfile
 # pull official base image
 FROM node:14.16.0-alpine
 
@@ -27,6 +27,18 @@ COPY . ./
 # start app
 CMD ["npm", "start"]
 ```
+**.dockerignore**
+
+```.gitignore
+node_modules
+npm-debug.log
+build
+.dockerignore
+**/.git
+**/.DS_Store
+**/node_modules
+```
+
 
 # Getting Started with Create React App
 
