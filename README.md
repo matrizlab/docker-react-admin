@@ -39,6 +39,63 @@ build
 **/node_modules
 ```
 
+```shell script
+docker build -t react-admin:dev .
+```
+
+**docker-compose.yml**
+
+```dockerfile
+version: '3.7'
+
+services:
+
+  react-admin:
+    container_name: react-admin
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true  
+    stdin_open: true
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Getting Started with Create React App
 
