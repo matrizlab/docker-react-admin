@@ -65,6 +65,26 @@ services:
     stdin_open: true
 ```
 
+```shell script
+docker-compose up -d --build
+```
+
+```shell script
+docker exec -it <container> sh
+```
+
+```shell script
+npm i react-admin ra-data-json-server prop-types
+```
+
+```shell script
+npm r react-admin ra-data-json-server prop-types
+```
+
+
+
+
+
 
 
 
